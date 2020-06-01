@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #898989;
+}
+
+div.wrap {
+    height: 100vh;
+    position: relative;
+}
+
+div.header {
+    overflow: hidden;
+}
+
+div.header div.leftTop {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+div.header div.leftTop a:nth-child(1) {
+    display: block;
+    line-height: 50px;
+    float: left;
+    padding: 0 10px 0 20px;
+    opacity: 0.8;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+div.header div.leftTop a:nth-child(1):hover {
+    opacity: 1;
+}
+
+div.header div.leftTop a:nth-child(2) {
+    display: block;
+    line-height: 50px;
+    float: left;
+    padding: 0 10px;
+}
+
+div.header div.leftTop a:nth-child(2):hover input {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    
+}
+
+div.header div.leftTop a:nth-child(2) input {
+    cursor: pointer;
+    opacity: 0;
+    outline: none;
+    border: none;
+    background: none;
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+div.header div.leftTop a:nth-child(2) input:focus {
+    cursor: text;
+}
+
+/*여기 js로 수정*/
+
+div.header div.rightTop {
+    display: inline-block;
+    width: 50%;
+    float: right;
+    text-align: right;
+    height: 70px;
+    position: relative;
+}
+
+
+
+div.header div.rightTop a {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px 0 0;
+}
+div.header div.rightTop a div.weather {
+    font-size: 25px;
+}
+div.header div.rightTop a div.place {
+    font-size: 12px;
+}
+div.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+div.main div.clock {
+    font-size: 130px;
+}
+div.main div.greeting {
+    font-size: 40px;
+}
+div.main div.today {
+    font-size: 30px;
+}
+div.main div.today input {
+    width: 500px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: none;
+    text-align: center;
+}
+
+div.main div.today input:focus {
+    
+    outline: none;
+}
+div.footer div.leftFooter {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 50px;
+}
+div.footer div.leftFooter a {
+    display: inline-block;
+    padding: 0 10px 0 20px;
+    font-size: 25px;
+}
+div.footer div.leftFooter span {
+    font-size: 13px;
+    vertical-align: 5px;
+}
+div.footer div.quote {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    line-height: 50px;
+}
+div.footer div.rightFooter {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+div.footer div.rightFooter a {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 20px 0 10px;
+}
+
+.form,
+.greeting {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
