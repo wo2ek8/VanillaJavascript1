@@ -5,14 +5,26 @@ const greeting = document.querySelector('.js-greetings');
 const userLs = 'currentUser';
 const showingOn = 'showing';
 
+function saveName(text) {
+    localStorage.setItem(userLs, text);
+}
+
+function handleSubmit(e) {
+    e.preventDefault();
+    const cv = input.value;
+    paintGreeting(cv);
+}
+
 function askForName() {
     form.classList.add(showingOn);
+    form.addEventListener('submit', handleSubmit);
 }
 
 function paintGreeting(text) {
     form.classList.remove(showingOn);
     greeting.classList.add(showingOn);
     greeting.innerText = `Hello ${text}`;
+    saveName(text);
 }
 
 function loadName() {
@@ -22,7 +34,7 @@ function loadName() {
         console.log('currentUser === null');
     } else {
         paintGreeting(currentUser);
-        consoloe.log('currentUser !== null');
+        console.log('currentUser !== null');
     }
 }
 
