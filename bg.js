@@ -6,7 +6,7 @@ const IMG_NUMBER = 6;
 
 function paintImage(imgNumber) {
     const image = new Image();
-    image.src = `landscape/${imgNumber + 1}.jpg`;
+    image.src = `image/${imgNumber + 1}.jpg`;
     body.appendChild(image);
     //console.log(imgNumber);
     image.classList.add('bgImage');

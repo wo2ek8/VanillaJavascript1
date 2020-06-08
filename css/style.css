@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 16px;
+    color: #898989;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+div.wrap {
+    background-color: lavender;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+div.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+div.links {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.weather {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+div.setting {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 15px;
+    font-size: 25px;
+}
+div.quotes {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 15px;
+}
+div.todo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 15px;
+}
+div.links a {
+    display: inline-block;
+    margin: 15px 0 15px 15px;
+    padding: 5px;
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+div.links a:hover {
+    opacity: 1;
+}
+div.temp {
+    font-size: 25px;
+}
+div.temp span:nth-child(1) {
+    font-size: 15px;
+}
+div.location {
+    font-size: 15px;
+}
+div.weather {
+    margin: 10px 15px;
+}
+div.clock {
+    font-size: 130px;
+}
+div.greeting {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+div.asking {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+div.focus input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid;
+    width: 460px;
+    outline: none;
+    font-size: 30px;
+    text-align: center;
+}
